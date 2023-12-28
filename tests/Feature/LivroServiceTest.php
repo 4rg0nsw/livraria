@@ -32,7 +32,7 @@ class LivroServiceTest extends TestCase
 
         $livroData = [
             'titulo' => 'Livro Teste',
-            'editora' => 'Editora Teste',
+            'editora' => 'Editora Teste', 
             'edicao' => 1,
             'ano_publicacao' => 2023,
             'preco' => '29,99',
