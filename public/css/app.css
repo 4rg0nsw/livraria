@@ -1,0 +1,88 @@
+    /* Adiciona estilo para centralizar o botão */
+    /* Adiciona estilo para centralizar o botão */
+    .text-center {
+        text-align: center;
+    }
+
+    /* Remove bordas da tabela */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: none;
+    }
+    
+
+    /* Adiciona algum espaçamento entre células */
+    td {
+        padding: 8px;
+    }
+
+    /* Adiciona estilo para colocar os botões lado a lado */
+    .button-container {
+        display: flex;
+        gap: 8px; /* Adicione um espaçamento entre os botões se desejar */
+    }
+
+    /* Estilo para o menu */
+    nav {
+        background-color: #f8f9fa;
+    }
+
+    .navbar-brand {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .navbar-nav {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-item {
+        margin-right: 20px; /* Ajuste a margem conforme necessário */
+        position: relative;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        display: block;
+    }
+
+    /* Estilo para o submenu */
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 200px; 
+    }
+
+    .nav-item:hover .submenu {
+        display: block;
+    }
+
+    .submenu-item {
+        padding: 10px;
+        width: 100%; 
+    }
+
+    .submenu-item a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        display: block;
+    }
+
+    th.center-cell {
+        text-align: center;
+        vertical-align: middle;
+    }
