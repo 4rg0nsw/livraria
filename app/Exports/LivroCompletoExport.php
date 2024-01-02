@@ -2,10 +2,7 @@
 
 namespace App\Exports;
 
-<<<<<<< HEAD
 use App\Models\Autor;
-=======
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
 use App\Models\Livro;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -16,10 +13,7 @@ class LivroCompletoExport implements FromCollection, WithHeadings
     {
         // Carregar livros com relações
         $livros = Livro::with('assuntos', 'autores')->get();
-<<<<<<< HEAD
         //$livros = Autor::with('assuntos', 'livros')->get();
-=======
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
 
         // Mapear os dados para o formato desejado
         $livrosData = $livros->map(function ($livro) {
