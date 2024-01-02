@@ -35,6 +35,7 @@ class RelatorioController extends Controller
         return Excel::download(new LivroCompletoExport, 'relatorio_completo.xlsx');
     }
 
+<<<<<<< HEAD
 
     /**
      * Gera página de relatório a partir da view:
@@ -43,6 +44,8 @@ class RelatorioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+=======
+>>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
     public function gerarRelatorioLivrosAssuntosAutores()
     {
         $relatorioAll = LivroAssuntoAutor::all();
@@ -50,12 +53,15 @@ class RelatorioController extends Controller
         return view('relatorio.index_livros_assuntos_autores', compact('relatorioAll'));
     }
 
+<<<<<<< HEAD
     /**
      * Gera relatório e exporta em excel:
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+=======
+>>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
     public function exportarRelatorio()
     {
         return Excel::download(new LivroAssuntoAutorExport, 'relatorio_livros_assuntos_autores.xlsx');

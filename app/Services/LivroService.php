@@ -83,7 +83,11 @@ class LivroService
             'editora' => $data['editora'],
             'edicao' => $data['edicao'],
             'ano_publicacao' => $data['ano_publicacao'],
+<<<<<<< HEAD
             'valor' => $preco
+=======
+            'valor' => $preco          
+>>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
         ]);
 
         if(isset($data['autores']) && $data['autores']):
