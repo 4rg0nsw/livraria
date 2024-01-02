@@ -134,13 +134,10 @@ class AutorController extends Controller
         if(!$autor)
             return redirect()->route('autor.index');
 
-<<<<<<< HEAD
         if ($autor->livros()->exists())
         return redirect()->route('autor.index')
             ->with('message', 'Autor vínculado a livro não pode ser deletado.');
 
-=======
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
         $autor->delete();
 
         return redirect()->route('autor.index')

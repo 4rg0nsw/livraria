@@ -20,12 +20,9 @@ class CreateLivrosTable extends Migration
             $table->unsignedInteger('edicao');
             $table->string('ano_publicacao', 4);
             $table->timestamps();
-<<<<<<< HEAD
 
             $table->index('titulo');
 
-=======
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
         });
     }
 

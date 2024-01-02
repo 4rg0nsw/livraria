@@ -43,15 +43,9 @@
                     <td>{{ $value->ano_publicacao }}</td>
                     <td>{{ $value->valor }}</td>
                     <td>{{ $value->assuntos }}</td>
-<<<<<<< HEAD
                     <td>{{ $value->autors }}</td>
                     <td>{{ $value->updated_at->format('d-m-Y') }}</td>
                     <td>{{ $value->created_at->format('d-m-Y') }}</td>
-=======
-                    <td>{{ $value->autores }}</td>
-                    <td>{{ $value->updated_at }}</td>
-                    <td>{{ $value->created_at }}</td>
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
                 </tr>
             @endforeach
         </tbody>
