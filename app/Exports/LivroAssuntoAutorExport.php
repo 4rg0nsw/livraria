@@ -3,10 +3,7 @@
 namespace App\Exports;
 
 use App\Models\LivroAssuntoAutor;
-<<<<<<< HEAD
 use Carbon\Carbon;
-=======
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class LivroAssuntoAutorExport implements FromCollection
