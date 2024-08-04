@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assunto</title>
+    <title>Detalhes do Assunto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
 <body>
-
-@section('content')
     @include('menu')
 
-<div><hr/></div>
-    <h1 class="mb-4">Assunto</h1>
+    <div class="container mt-4">
+        <h1 class="mb-4">Assunto</h1>
 
-        <table class="table">
+        <table class="table table-striped">
             <thead>
-            <tr>
-                <th scope="col" colspan="3" rows="3" class="center-cell">
-                    <h3>Detalhes do Livro</h3>
-                </th>
-            </tr>
                 <tr>
-                    <th scope="col">Livro ID</th>
+                    <th scope="col" colspan="3" class="text-center">
+                        <h3>Detalhes do Assunto</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">ID</th>
                     <th scope="col">Descrição</th>
                     <th scope="col">Ação</th>
                 </tr>
             </thead>
             <tbody>
-                    <tr>
-                    <th scope="row">{{ $assuntoInfo['id'] }}</th>
-                    <th scope="row">{{ $assuntoInfo['descricao'] }}</th>
-
-                    <th scope="row" class="button-container">
-                        <form action="{{ route('assunto.destroy', ['id' => $assuntoInfo['id']]) }}" method="POST">
+                <tr>
+                    <td>{{ $assuntoInfo['id'] }}</td>
+                    <td>{{ $assuntoInfo['descricao'] }}</td>
+                    <td class="d-flex">
+                        <form action="{{ route('assunto.destroy', ['id' => $assuntoInfo['id']]) }}" method="POST" class="me-2">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Deletar</button>
                         </form>
-                        <form action="{{ route('assunto.edit', ['id' => $assuntoInfo['id']]) }}" method="POST">
+                        <form action="{{ route('assunto.edit', ['id' => $assuntoInfo['id']]) }}" method="GET">
                             @csrf
-                            @method('GET')
-                            <button type="submit" class="btn btn-danger">Editar</button>
+                            <button type="submit" class="btn btn-warning">Editar</button>
                         </form>
-                    </th>
-
-                    </tr>
+                    </td>
+                </tr>
             </tbody>
         </table>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

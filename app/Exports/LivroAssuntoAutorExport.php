@@ -42,11 +42,7 @@ class LivroAssuntoAutorExport implements FromCollection
             'Assuntos',
             'Autores',
             'Data de Atualização',
-<<<<<<< HEAD
-            'Data de Criação'
-=======
             'Data de Criação',
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
         ];
     }
 }

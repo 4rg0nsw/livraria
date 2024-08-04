@@ -14,7 +14,6 @@ class AssuntoExport implements FromCollection
     {
         return Assunto::all();
     }
-<<<<<<< HEAD
 
     public function headings(): array
     {
@@ -24,6 +23,4 @@ class AssuntoExport implements FromCollection
             'Assunto/Gênero'
         ];
     }
-=======
->>>>>>> 3fda0293d465dbf37e279f778f492fa7c52c0484
 }

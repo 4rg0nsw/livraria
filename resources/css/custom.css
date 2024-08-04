@@ -1,0 +1,100 @@
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    color: #e74c3c; /* Udemy Red */
+}
+
+.navbar-nav .nav-link {
+    color: #3498db; /* Udemy Blue */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #2980b9; /* Darker Blue */
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: bold;
+    color: #2c3e50; /* Darker Gray */
+}
+
+/* Buttons */
+.btn-primary, .btn-warning, .btn-danger {
+    border-radius: 0;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #e74c3c; /* Udemy Red */
+    border-color: #e74c3c;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b; /* Darker Red */
+    border-color: #c0392b;
+}
+
+.btn-warning {
+    background-color: #f39c12; /* Warning Yellow */
+    border-color: #f39c12;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22; /* Darker Yellow */
+    border-color: #e67e22;
+}
+
+.btn-danger {
+    background-color: #e74c3c; /* Danger Red */
+    border-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b; /* Darker Red */
+    border-color: #c0392b;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+/* Links */
+a {
+    color: #3498db; /* Udemy Blue */
+}
+
+a:hover {
+    color: #2980b9; /* Darker Blue */
+}
+
+/* Table */
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.alert-link {
+    color: #e74c3c; /* Udemy Red */
+}
+
+.alert-link:hover {
+    color: #c0392b; /* Darker Red */
+}

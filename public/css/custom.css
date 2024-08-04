@@ -1,0 +1,76 @@
+/* Custom styles for Udemy-like appearance */
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    color: #e74c3c; /* Udemy Red */
+}
+
+.navbar-nav .nav-link {
+    color: #3498db; /* Udemy Blue */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #2980b9; /* Darker Blue */
+}
+
+/* Dropdown menu */
+.nav-item.dropdown .dropdown-menu {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item.dropdown .dropdown-item {
+    color: #333;
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #e74c3c;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #e74c3c; /* Udemy Red */
+    border-color: #e74c3c;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b; /* Darker Red */
+    border-color: #c0392b;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+/* Links */
+a {
+    color: #3498db; /* Udemy Blue */
+}
+
+a:hover {
+    color: #2980b9; /* Darker Blue */
+}
+
+/* Table */
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: black;
+}

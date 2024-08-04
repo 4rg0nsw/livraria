@@ -19,6 +19,10 @@ use App\Http\Controllers\{
 |
 */
 
+Route::get('/', function () {
+    return view('livros.index');
+});
+
 // Rotas para livros
 Route::prefix('livros')->group(function () {
     Route::get('/', [LivroController::class, 'index'])->name('livros.index');
